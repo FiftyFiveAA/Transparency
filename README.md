@@ -39,7 +39,7 @@ pip3 install ipaddress, python-geoip, python-geoip-geolite2, psutil
 python transparency.py
 ```
 
-* In your browser navigate to **127.0.0.1:12345**. The table next to the globe contains the data populating the pings. Type in the search bar to limit the results (it searches through all columns and rows). If you want to ignore results in a particular country then type in an exclamation mark then the country's ISO code. For example "!us" to show only results from outside the United States.
+* In your browser navigate to **127.0.0.1:12345**. The table next to the globe contains the data populating the pings. This table won't populate with data until 5 minutes after the script is first ran. Type in the search bar to limit the results (it searches through all columns and rows). If you want to ignore results in a particular country then type in an exclamation mark then the country's ISO code. For example "!us" to show only results from outside the United States.
 
 * There are 2 more tables that contain searchable data. Click the "Ports Table" or "Command Line Table" buttons in the top right of the screen to quickly navigate to those tables.
 
