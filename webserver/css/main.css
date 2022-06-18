@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  background-color:#262626;
+}
+
+#globe {
+  float: left;
+  width: 35%;
+  margin: 1%;
+}
+
+#searchProcessesDataTable{
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  background-color: #595959;
+  float: right;
+  width: 60%;
+  margin: 1%;
+}
+
+#processesDataTable{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  table-layout: fixed;
+  float: right;
+  word-wrap: break-word;
+  margin: 1%;
+}
+
+#searchProcessesGenericTable{
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  background-color: #595959;
+  width: 80%;
+  margin: 1%;
+}
+
+#processesGenericTable{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 98%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  margin: 1%;
+}
+
+#searchCMDTable{
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  background-color: #595959;
+  width: 80%;
+  margin: 1%;
+}
+
+#processesCMDTable{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 98%;
+  table-layout: fixed;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin: 1%;
+  margin-right: 1%;
+}
+
+.filepath-col{
+  width: 20%;
+}
+
+.domain-col{
+  width: 20%;
+}
+
+.filepath3-col{
+  width: 20%;
+}
+
+.ports-col{
+  width: 20%;
+}
+
+.small-col{
+  width: 5%;
+}
+
+.cmd-col{
+  width: 90%;
+}
+
+.pagination{
+  display: inline-block;
+  float: right;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
+
+.pagination a{
+  color: #b3b3b3;
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #234b1b;
+  color: #b3b3b3;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+  background-color: #234b1b;
+  border-radius: 5px;
+}
+
+td, th {
+  color: #b3b3b3;
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #404040;
+}
+
+tr:hover{
+  background-color: #234b1b;
+}
+
+table#processesDataTable td:nth-child(8){
+  display:none;
+}
