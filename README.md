@@ -53,7 +53,7 @@ python transparency.py
   - There are multiple threads that all are reading/writing to a global variable. If you were doing this properly then you should use a thread safe mechanism instead.
   - processinfo.py utilizes the psutil library for gathering socket information, it is queried constantly in a while loop. There is the potential for a socket to be opened and closed in this time period, and thus the code will miss it. During testing I was unable to observe this, but it's theoretically possible.
   - The "database" is just the huge global dictionary that the threads utilize. The "pickle" library is used to serialize the dictionary which is then saved to a file "output.pickle".
-  - There are 4 output files. output.pickle is the main database that is looked for when the code starts. output_backup.pickle is a backup that can be renamed to "output.pickle" if the original is corrupted. Output_generic.csv and output_locations.csv and also available for further analysis.
+  - There are 4 output files. output.pickle is the main database that is looked for when the code starts. output_backup.pickle is a backup that can be renamed to "output.pickle" if the original is corrupted. Output_generic.csv and output_locations.csv are also available for further analysis.
 
 * **Web App**:
   - I used http.server because I wanted as minimal of a web server as possible. I hardcoded the server responses in webserver.py.
